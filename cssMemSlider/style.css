@@ -3,15 +3,15 @@ body {
   position: relative;
 }
 .wrapper {
-  width:41%;
-  height: 500px;
+  width:35%;
+  height: 60vh;
   margin: 0 auto;
   margin-top: 100px;
   overflow: hidden;
 }
 .slides {
   width: 400%;
-  height: 100%;
+  height: 75%;
   display: flex;
 }
 
@@ -23,9 +23,9 @@ body {
  
 .memesDesc {
   position: relative;
-  top: calc(100% - 92px);
+  top: 100%;
   z-index: 100;
-  font-size: 16px;
+  font-size: 1.4rem;
 
 }
 .slide1 {
@@ -34,7 +34,7 @@ body {
   background: no-repeat;
   background-image: url(img/before.jpeg);
 
-  background-size: 100% 400px;
+  background-size: 100% 90%;
 }
 .slide2 {
   width: 100%;
@@ -42,7 +42,7 @@ body {
   background: no-repeat;
 
   background-image: url(img/before1.jpeg);
-  background-size: 75% 400px;
+  background-size: 75% 90%;
 }
 .slide3 {
   width: 100%;
@@ -50,7 +50,7 @@ body {
   background: no-repeat;
 
   background-image: url(img/before2.jpeg);
-  background-size: 50% 400px;
+  background-size: 50% 90%;
 }
 .slide4 {
   width: 100%;
@@ -58,7 +58,7 @@ body {
   background: no-repeat;
 
   background-image: url(img/before3.jpeg);
-  background-size: 25% 400px;
+  background-size: 25% 90%;
 }
 
 #point1:checked ~ .slides > .slide1 {
@@ -96,11 +96,11 @@ display: none;
 .label {
   cursor: pointer;
 	display: inline-block;
-	height: 11px;
-  width: 11px;
-	margin: 0px 3px 0 10px;
+	height: 0.7rem;
+  width: 0.8rem;
+	margin: 1% 3px 0 10px;
 	position: relative;
-  top: calc(100% - 66px);
+  /* top: calc(100% - 66px); */
   left: calc(100% - 105px);
 	border-radius: 50%;
   z-index: 999;
@@ -136,7 +136,12 @@ display: none;
 }
 .label:checked {
   /* background: red; */
+}@media (min-width:1450px) {
+  .wrapper {
+    width: 30%;
+  }
 }
+
 @media (max-width:1200px) {
   .wrapper {
     width: 50%;
@@ -164,9 +169,10 @@ display: none;
   }
   .label {
     left: calc(50% - 48px);
+    top: 5%;
   }
   .memesDesc {
-    top: calc(100% - 76px);
+    top: 115%;
   }
   .slide1 {
     background-size: 100% 300px;
@@ -184,7 +190,6 @@ display: none;
 @media (max-width:420px) {
   .wrapper {
     width: 98%;
-
   }
 
 }
