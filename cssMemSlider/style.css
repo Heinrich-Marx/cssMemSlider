@@ -3,7 +3,7 @@ body {
   position: relative;
 }
 .wrapper {
-  width:600px;
+  width:41%;
   height: 500px;
   margin: 0 auto;
   margin-top: 100px;
@@ -19,16 +19,18 @@ body {
 }
 
 .slide {
-  transition: 0.3s;
+  transition: 0.5s;
   width: 25%;
   /* border-radius: 30px; */
-
+  position: relative;
 }
  
 .memesDesc {
   position: relative;
-  top: 400px;
+  top: calc(100% - 92px);
   z-index: 100;
+  font-size: 16px;
+
 }
 .slide1 {
   width: 100%;
@@ -36,7 +38,7 @@ body {
   background: no-repeat;
   background-image: url(img/before.jpeg);
 
-  background-size: 600px 400px;
+  background-size: 100% 400px;
 }
 .slide2 {
   width: 100%;
@@ -44,7 +46,7 @@ body {
   background: no-repeat;
 
   background-image: url(img/before1.jpeg);
-  background-size: 600px 400px;
+  background-size: 75% 400px;
 }
 .slide3 {
   width: 100%;
@@ -52,7 +54,7 @@ body {
   background: no-repeat;
 
   background-image: url(img/before2.jpeg);
-  background-size: 600px 400px;
+  background-size: 50% 400px;
 }
 .slide4 {
   width: 100%;
@@ -60,7 +62,7 @@ body {
   background: no-repeat;
 
   background-image: url(img/before3.jpeg);
-  background-size: 600px 400px;
+  background-size: 25% 400px;
 }
 
 #point1:checked ~ .slides > .slide1 {
@@ -91,12 +93,6 @@ body {
 
 .radioBtn {
 display: none;
-margin-top: 50px;
-position: relative;
-top: calc(100% - 80px);
-left: calc(100% - 65px);
-z-index: 999;
-cursor: pointer;
 }
 .labels {
   
@@ -107,7 +103,7 @@ cursor: pointer;
 	height: 11px;
 	margin: 0px 3px 0 10px;
 	position: relative;
-  top: calc(100% - 80px);
+  top: calc(100% - 76px);
   left: calc(100% - 110px);
 	border-radius: 50%;
   z-index: 999;
@@ -133,4 +129,50 @@ cursor: pointer;
 }
 .label:checked {
   /* background: red; */
+}
+@media (max-width:1200px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+@media (max-width:1000px) {
+  .wrapper {
+    width: 60%;
+  }
+}
+@media (max-width:800px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+@media (max-width:700px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media (max-width:650px) {
+  .wrapper {
+    width: 95%;
+    height: 400px;
+
+  }
+  .slide1 {
+    background-size: 100% 300px;
+  }
+  .slide2 {
+    background-size: 75% 300px;
+  }
+  .slide3 {
+    background-size: 50% 300px;
+  }
+  .slide4 {
+    background-size: 25% 300px;
+  }
+}
+@media (max-width:420px) {
+  .wrapper {
+    width: 98%;
+
+  }
+
 }
