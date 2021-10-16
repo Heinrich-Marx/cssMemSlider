@@ -2,17 +2,74 @@ body {
   background-color: aquamarine;
   position: relative;
 }
-
-.slide {
-  width: 600px;
+.wrapper {
+  width:600px;
   height: 400px;
   margin: 0 auto;
-  position: relative;
-  top: 200px;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  /*margin: 0 auto;*/
+  display: flex;
+    box-shadow: 0px 10px 10px 20px gray;
+
+}
+
+.slide {
+  transition: 0.3s;
+  width: 25%;
 }
 
 .slide1 {
+  width: 100%;
+  height: 100%;
   background-image: url(img/before.jpeg);
   background-size: 600px 400px;
 }
+.slide2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/before1.jpeg);
+  background-size: 600px 400px;
+}
+.slide3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/before2.jpeg);
+  background-size: 600px 400px;
+}
+.slide4 {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/before3.jpeg);
+  background-size: 600px 400px;
+}
 
+#point1:checked ~ .slides > .slide1 {
+  margin-left: 0;
+}
+#point2:checked ~ .slides > .slide1 {
+   margin-left: -33.4%; 
+}
+#point3:checked ~ .slides > .slide1 {
+  margin-left: -100%;
+}
+#point4:checked ~ .slides > .slide1 {
+  margin-left: -300%;
+}
+
+
+.radioBtn {
+  margin-top: 50px;
+}
+.labels {
+  width: 50px;
+}
+.label {
+  width: 6px;
+  height: 30px;
+  background-color: red;
+}
