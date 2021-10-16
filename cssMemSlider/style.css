@@ -161,7 +161,12 @@ display: none;
   .wrapper {
     width: 95%;
     height: 400px;
-
+  }
+  .label {
+    left: calc(50% - 48px);
+  }
+  .memesDesc {
+    top: calc(100% - 75px);
   }
   .slide1 {
     background-size: 100% 300px;
