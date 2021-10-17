@@ -112,19 +112,19 @@ display: none;
 	border: 2px solid #4a28ea;
 	content: " ";
 	display: block;
-	height: 12px;
+	height: 0.8rem;
   position: relative;
-	width: 12px;
+	width: 0.8rem;
   position: relative;
-  width: 12px;
+  
   top: -24px;
 	border-radius: 50%;
 }
 .label::before {
   content: '';
   cursor: pointer;
-  height: 20px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.6rem;
   display: inline-block;
     position: relative;
     top: -4px;
