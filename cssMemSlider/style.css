@@ -142,6 +142,10 @@ display: none;
   }
 }
 
+.label:active {
+  background: gray;
+}
+
 @media (max-width:1200px) {
   .wrapper {
     width: 50%;
